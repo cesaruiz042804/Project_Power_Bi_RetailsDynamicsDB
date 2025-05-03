@@ -1,10 +1,5 @@
 ﻿USE RetailDynamicsDB;
 
--- Primero, borra todos los datos existentes de la tabla CustomerReviews
-DELETE FROM CustomerReviews;
--- Luego, reestablece el valor de identidad de la tabla CustomerReviews
-DBCC CHECKIDENT ('CustomerReviews', RESEED, 0);
-
 INSERT INTO CustomerReviews (ProductID, CustomerID, ReviewDate, Rating, ReviewText) VALUES
 	(12, 35, '2023-07-18', 4, 'Buen producto, cumple su función.'),
 	(55, 12, '2024-03-05', 5, 'Excelente calidad y precio.'),
