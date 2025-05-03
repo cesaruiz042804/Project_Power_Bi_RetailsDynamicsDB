@@ -100,21 +100,7 @@ CREATE TABLE Employees (
     FOREIGN KEY (StoreID) REFERENCES Stores(StoreID)
 );
 GO
-
--- ------------------------------------------------------------------
--- Tabla: Promociones (Promotions)
--- ------------------------------------------------------------------
-CREATE TABLE Promotions (
-    PromotionID INT IDENTITY(1,1) PRIMARY KEY,
-    PromotionName VARCHAR(100),
-    StartDate DATE,
-    EndDate DATE,
-    DiscountPercentage DECIMAL(3, 2),
-    ApplicableToCategory VARCHAR(100),
-	PromotionDescription VARCHAR(250),
-);
-GO
-
+	
 -- ------------------------------------------------------------------
 -- Tabla: customer_reviews
 -- ------------------------------------------------------------------
@@ -145,7 +131,3 @@ GO
 -- Fin del script
 -- ------------------------------------------------------------------
 
-
-SELECT * FROM Customers;
-SELECT * FROM Products;
-SELECT * FROM ProductReviews;
