@@ -1,4 +1,4 @@
-import pandas as pd
+import pandas as pd ### Debes instalar pandas, pyodbc y nltk para poder ejecutar este script de python
 import pyodbc
 import nltk
 from nltk.sentiment import SentimentIntensityAnalyzer
@@ -74,13 +74,7 @@ customer_reviews_df['SentimentBucket'] = customer_reviews_df['SentimentScore'].a
 print(customer_reviews_df.head())
 
 customer_reviews_df.to_csv('fact_customer_reviews_with_sentiment.csv', index=False)
-    
-    
-   
-   
-   
-   
-   
+      
 """
 import pandas as pd: Importa la librería pandas y la asigna el alias pd. pandas es fundamental 
 para la manipulación y análisis de datos, proporcionando estructuras de datos como los DataFrames.
